@@ -288,7 +288,7 @@ Responsibilities:
 
 
 
-* Collaborators (if any):
+Collaborators (if any):
 * AircraftDatastore
 * AlertService
 * RadarDisplayBuilder
@@ -298,6 +298,7 @@ Responsibilities:
 Assumptions (if any):
 
 * The controller selects a plane currently visible on the screen when making a query.
+
 
 
 
