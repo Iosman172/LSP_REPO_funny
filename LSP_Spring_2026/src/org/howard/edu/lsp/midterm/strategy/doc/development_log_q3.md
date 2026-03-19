@@ -1,0 +1,7 @@
+The current `PriceCalculator` design works for the existing customer types, but it is not easy to maintain or extend as the system grows. The class uses a sequence of `if` statements that directly checks customer type values and applies the pricing logic inside one method. This means the class is responsible for both determining the customer category and performing the discount calculation, which mixes multiple responsibilities into one place.
+
+This design also violates the Open/Closed Principle because every time a new customer type or discount rule is introduced, the `calculatePrice` method must be modified. As a result, the class is not closed to modification, and repeated changes increase the risk of introducing bugs into existing logic.
+
+In addition, the current implementation does not encapsulate what varies. The discount behavior for each customer type is embedded directly in the `PriceCalculator` class rather than being separated into interchangeable strategies. This makes the code harder to test, harder to reuse, and less flexible if discount rules become more complex in the future.
+
+A better design is to use the Strategy Pattern. With this pattern, each discount rule is placed in its own class that implements a common interface. The calculator can then delegate the pricing behavior to the selected strategy, making the design easier to extend, maintain, and understand.
