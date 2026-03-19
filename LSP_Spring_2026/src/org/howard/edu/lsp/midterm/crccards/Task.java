@@ -4,7 +4,7 @@ package org.howard.edu.lsp.midterm.crccards;
  * Represents a single task in the task management system.
  * A task stores its ID, description, and current status.
  *
- * @author [INPUT NAME]
+ * @author Ibrahim Osman
  */
 public class Task {
     private static final String OPEN = "OPEN";
