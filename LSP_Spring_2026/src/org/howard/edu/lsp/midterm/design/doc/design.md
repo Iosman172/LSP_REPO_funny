@@ -1,6 +1,7 @@
 CRC Card 1
 
-Class: Order  
+Class: Order
+
 Responsibilities:
 - Store order data such as customer name, email, item, and base price
 - Provide controlled access to order information
@@ -18,7 +19,8 @@ Collaborators:
 
 CRC Card 2
 
-Class: OrderProcessor  
+Class: OrderProcessor
+
 Responsibilities:
 - Coordinate the overall order-processing workflow
 - Request price calculation for an order
@@ -37,7 +39,8 @@ Collaborators:
 
 CRC Card 3
 
-Class: PricingService  
+Class: PricingService
+
 Responsibilities:
 - Calculate tax for an order
 - Apply discount rules
@@ -50,7 +53,8 @@ Collaborators:
 -------------------
 
 CRC Card 4
-Class: ReceiptPrinter  
+Class: ReceiptPrinter
+
 Responsibilities:
 - Format and print a receipt for an order
 - Display customer, item, and final total
@@ -63,7 +67,8 @@ Collaborators:
 
 CRC Card 5
 
-Class: OrderRepository  
+Class: OrderRepository
+
 Responsibilities:
 - Save processed order information
 - Isolate file or storage logic from business logic
@@ -76,7 +81,8 @@ Collaborators:
 
 CRC Card 6
 
-Class: NotificationService  
+Class: NotificationService
+
 Responsibilities:
 - Send or simulate sending a confirmation message to the customer
 - Isolate notification behavior from order-processing logic
@@ -88,7 +94,8 @@ Collaborators:
 
 CRC Card 7
 
-Class: ActivityLogger  
+Class: ActivityLogger
+
 Responsibilities:
 - Log order-processing activity
 - Record when processing occurs
