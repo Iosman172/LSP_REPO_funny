@@ -26,7 +26,7 @@ Description:
 An alternative is to use explicit lock objects rather than the synchronized keyword. For example, Java’s ReentrantLock allows you to manually lock and unlock the critical section in addRequest(). The critical section involves accessing or modifying the shared resources nextId and requests. Locking before and unlocking after this code ensures only one thread executes it at a time.
 
 Code Snippet:
-private final Lock lock = new ReentrantLock();
+```private final Lock lock = new ReentrantLock();
 
 public void addRequest(String studentName) {
     lock.lock();
@@ -38,3 +38,4 @@ public void addRequest(String studentName) {
         lock.unlock();
     }
 }
+```
